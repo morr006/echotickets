@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendita Biglietto - ECHO TICKETS</title>
+    <link rel="stylesheet" href="stylevendita.css">
+</head>
+<body>
+    <!-- Barra di navigazione -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="chisiamo.html">Chi Siamo</a>
+        <a href="prodotti.html">Prodotti</a>
+        <a class="active" href="vendita.html">Vendita</a> <!-- Attiva la pagina Vendita -->
+        <a href="contattaci.html">Contattaci</a>
+    </div>
+
+    <!-- Sezione Titolo e descrizione -->
+    <section class="intro">
+        <div class="container">
+            <h1>Vendi il Tuo Biglietto</h1>
+            <p>Hai un biglietto che non puoi più usare? Vendi il tuo biglietto attraverso il nostro sito e trova un nuovo acquirente!</p>
+        </div>
+    </section>
+
+    <!-- Form di Vendita -->
+    <section class="form-section">
+        <div class="container">
+            <form action="venditasuccesso.html" method="POST" class="vendita-form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+                <label for="concerto">Cantante/i</label>
+                <input type="text" id="concerto" name="concerto" placeholder="Nome del cantante" required>
+
+                <label for="luogo">Luogo del concerto</label>
+                <input type="text" id="luogo" name="luogo" placeholder="Inserisci il luogo" required>
+
+                <label for="data">Data del Concerto</label>
+                <input type="date" id="data" name="data" required>
+
+                <label for="quantita">Numero di Biglietti</label>
+                <input type="number" id="quantita" name="quantita" placeholder="Numero di biglietti" required>
+
+                <label for="prezzo">Prezzo per Biglietto (€)</label>
+                <input type="number" id="prezzo" name="prezzo" step="0.01" placeholder="Prezzo per biglietto" required>
+
+                <label for="messaggio">Messaggio (opzionale)</label>
+                <textarea id="messaggio" name="messaggio" placeholder="Aggiungi informazioni extra"></textarea>
+
+                <button type="submit">Invia la Vendita</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 ECHO TICKETS. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>

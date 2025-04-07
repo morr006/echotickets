@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contattaci - Biglietti Sito</title>
+    <style>
+        /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo principale */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Barra di Navigazione */
+.topnav {
+    background-color: #000;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    transform: scale(1.1);
+}
+
+.topnav a.active {
+    background-color: #721a6b;
+    color: white;
+}
+
+/* Sezione Introduttiva */
+.intro {
+    background-color: #721a6b;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sezione Form di Contatto con sfondo nero */
+.form-section {
+    background-color: #111;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Modulo di Contatto */
+.contatto-form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+}
+
+.contatto-form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.contatto-form input, .contatto-form select, .contatto-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.contatto-form input:focus, .contatto-form select:focus, .contatto-form textarea:focus {
+    border-color: #721a6b;
+    background-color: #444;
+    outline: none;
+}
+
+/* Pulsante */
+.contatto-form button {
+    background-color: #721a6b;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.contatto-form button:hover {
+    background-color: #6a145d;
+    transform: scale(1.05);
+}
+
+/* Sezione Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .contatto-form {
+        gap: 15px;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Barra di navigazione -->
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="chisiamo.html">Chi Siamo</a>
+        <a href="prodotti.html">Prodotti</a>
+        <a href="vendita.html">Vendita</a>
+        <a class="active" href="contattaci.html">Contattaci</a>
+    </div>
+
+    <!-- Sezione Titolo e descrizione -->
+    <section class="intro">
+        <div class="container">
+            <h1>Contattaci</h1>
+            <p>Hai domande o hai bisogno di assistenza? Scrivici e ti risponderemo il prima possibile!</p>
+        </div>
+    </section>
+
+    <!-- Form di Contatto -->
+    <section class="form-section">
+        <div class="container">
+            <form action="successo.html" method="POST" class="contatto-form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+                <label for="telefono">Telefono (opzionale)</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Inserisci il tuo numero di telefono">
+
+                <label for="tipo_problema">Tipo di richiesta</label>
+                <select id="tipo_problema" name="tipo_problema" required>
+                    <option value="assistenza">Assistenza</option>
+                    <option value="domande_generali">Domande Generali</option>
+                    <option value="altro">Altro</option>
+                </select>
+
+                <label for="messaggio">Messaggio</label>
+                <textarea id="messaggio" name="messaggio" placeholder="Scrivi il tuo messaggio" required></textarea>
+
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Biglietti Sito. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
