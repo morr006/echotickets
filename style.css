@@ -179,6 +179,63 @@ header p {
     font-size: 1.2rem;
     font-weight: 300;
 }
+/* PER RESPONSIVE DESIGN*/
+/* Aggiungiamo una media query per schermi piccoli */
+@media (max-width: 768px) {
+    /* Contenitore */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Centra tutto */
+        text-align: center; /* Centra il testo */
+        padding-top: 20px; /* Aggiungi spazio superiore */
+        width: 100%; /* Assicurati che il contenitore prenda tutta la larghezza */
+    }
+
+    /* Titolo */
+    .titolo {
+        font-size: 28px;
+        line-height: 1.5; /* Aggiungi un po' di spazio tra le righe */
+        width: 100%; /* Occupa tutta la larghezza */
+        padding: 10px;
+        margin: 0 auto; /* Centra il testo */
+        text-align: center; /* Centra il testo */
+        word-wrap: break-word; /* Permette al testo di andare a capo */
+    }
+
+    /* Descrizione */
+    .descrizione {
+        font-size: 20px;
+        line-height: 1.5; /* Spazio tra le righe */
+        width: 100%; /* Occupa tutta la larghezza */
+        padding: 10px;
+        margin: 0 auto; /* Centra il testo */
+        text-align: center; /* Centra il testo */
+        word-wrap: break-word; /* Permette al testo di andare a capo */
+    }
+
+    /* Hero image */
+    .hero-image {
+        width: 100%;
+        height: auto; /* Auto per mantenere le proporzioni */
+        object-fit: cover;
+    }
+
+    /* Logo */
+    .logo {
+        width: 60%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    /* Titolo principale (BIGLIETTI DEI CONCERTI) */
+    .tit1 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+}
+
 
 /* Sezione Chi Siamo */
 .about {
